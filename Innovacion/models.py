@@ -15,4 +15,11 @@ class Contacto(models.Model):
 
 def __str__(self):
     return self.nombre
+
+class Afiliado(models.Model):
+	id_afiliado = models.AutoField(db_column="idAfiliado", primary_key=True)
+	nombre_afiliado = models.CharField(max_length=60)
+	rubro = models.CharField(max_length=50)
+	monto_acelerado = models.IntegerField(null= False)
+
 	
