@@ -5,3 +5,5 @@ from .models import *
 admin.site.register(Navbar)
 #admin.site.register(QuienesSomos)
 #admin.site.register(Servicios)
+admin.site.register(Contacto)
+
