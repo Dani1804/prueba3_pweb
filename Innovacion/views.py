@@ -21,8 +21,10 @@ def quienesSomos(request):
 
 def servicios(request):
     Navbars = Navbar.objects.all()
+    Servicios = Servicio.objects.all()
     context = {
-        "Navbars": Navbars
+        "Navbars": Navbars,
+        "Servicios": Servicios
     }
     return render(request, 'Innovacion/servicios.html', context)
 

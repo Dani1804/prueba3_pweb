@@ -5,6 +5,8 @@ class Navbar(models.Model):
 	id_navbar = models.AutoField(db_column="idNavbar", primary_key=True)
 	nombre = models.CharField(max_length=50)
 	url = models.CharField(max_length=100)
+def __str__(self):
+    return self.nombre
 
 class Contacto(models.Model):
 	id_contacto = models.AutoField(db_column="idContacto", primary_key=True)
@@ -22,4 +24,15 @@ class Afiliado(models.Model):
 	rubro = models.CharField(max_length=50)
 	monto_acelerado = models.IntegerField(null= False)
 
+def __str__(self):
+    return self.nombre_afiliado
+
+class Servicio(models.Model):
+      id_servicio = models.AutoField(db_column="idServicio", primary_key=True)
+      nombre_Servicio = models.CharField(max_length=60)
+      descripcion = models.CharField(max_length=150)
+      
+def __str__(self):
+    return self.nombre_Servicio
+      
 	
