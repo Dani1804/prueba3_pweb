@@ -39,7 +39,7 @@
                   <th scope="col">ID Afiliado</th>
                   <th scope="col">Nombre Afiliado</th>
                   <th scope="col">Rubro</th>
-                  <th scope="col">Monto Acelerado</th>
+                  <th scope="col">Monto Acelerado USD</th>
                 </tr>
               </thead>
               <tbody>
@@ -49,6 +49,7 @@
                   <td>{{Afiliado.nombre_afiliado}}</td>
                   <td>{{Afiliado.rubro}}</td>
                   <td>{{Afiliado.monto_acelerado}}</td>
+                  <td><a href={{Afiliado.afiliado_urls}}><button type="button" class="btn btn-primary">conocer</button></a></td>
                 </tr>
                 {% endfor %}
               </tbody>
